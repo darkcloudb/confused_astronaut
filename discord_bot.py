@@ -83,10 +83,9 @@ async def manny(ctx):
 
 
 @client.command()
-async def friday(ctx):
+async def mysite(ctx):
     await ctx.message.delete()
-    await ctx.channel.send('https://www.youtube.com/watch?v=1TewCPi92ro&ab_channel=TechWithTimTechWithTimVerified') # noqa
-
+    await ctx.channel.send('<https://darkcloudb.github.io/portfolio/>')
 
 @client.command()
 @commands.is_owner()
