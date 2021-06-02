@@ -46,7 +46,7 @@ async def schedule(ctx):
     await ctx.message.delete()
     await ctx.channel.send(
         """
-            Schedule for 6/1
+            Schedule for 6/3
             Stand up form <https://airtable.com/shrsjXvrV9edrD0Pu?prefill_Course=SEQ3-199>
             9:30am - 10:00am Standup in Facilitator Rooms
             JT: <https://kenzie.zoom.us/j/4643938852>
@@ -55,9 +55,9 @@ async def schedule(ctx):
             10:00am - 11:00am Demo (<https://kenzie.zoom.us/j/97862629405>)
             11:00am - 12:00pm Zoom 1:1 (<https://kenzie.zoom.us/j/97862629405>)
             12:00pm - 1:00pm Lunch
-            1:00pm - 3:00pm Study Hall(<https://kenzie.zoom.us/j/97862629405>)
+            1:00pm - 2:00pm All Student Meeting (<https://kenzie.zoom.us/my/kenzieacademy>)
+            2:00pm - 3:00pm Study Hall (<https://kenzie.zoom.us/j/97862629405>)
             """
-            #  1:00pm - 3:00pm Activity (<https://kenzie.zoom.us/j/97862629405>)
             #  1:00pm - 3:00pm Jai's Career Class (<https://Kenzie.zoom.us/my/jaicook>) # noqa
     )
 
