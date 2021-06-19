@@ -46,17 +46,17 @@ async def schedule(ctx):
     await ctx.message.delete()
     await ctx.channel.send(
         """
-            Schedule for 6/8
+            Schedule for 6/9
             Stand up form <https://airtable.com/shrsjXvrV9edrD0Pu?prefill_Course=SEQ3-199>
             9:30am - 10:00am Standup in Facilitator Rooms
             JT: <https://kenzie.zoom.us/j/4643938852>
             Joseph: <https://kenzie.zoom.us/j/91302681693>
             Marcus: <https://kenzie.zoom.us/my/marcuscroom>
-            10:00am - 11:00am Demo (<https://kenzie.zoom.us/j/97862629405>)
-            11:00am - 12:00pm Zoom 1:1 (<https://kenzie.zoom.us/j/97862629405>)
+            10:00am - 12:00pm Zoom 1:1 (<https://kenzie.zoom.us/j/97862629405>)
             12:00pm - 1:00pm Lunch
-            1:00pm - 3:00pm Study Hall (<https://kenzie.zoom.us/j/97862629405>)
+            1:00pm - 3:00pm Activity(<https://kenzie.zoom.us/j/97862629405>)
             """
+            # 10:00am - 11:00am Demo (<https://kenzie.zoom.us/j/97862629405>)
             #  1:00pm - 3:00pm Jai's Career Class (<https://Kenzie.zoom.us/my/jaicook>) # noqa
     )
 
@@ -100,5 +100,20 @@ async def shutdown(ctx):
     await ctx.message.delete()
     await ctx.channel.send("Houston, I'm coming home...")
     await ctx.bot.logout()
+
+"""FFRK"""
+@client.command()
+async def labyrinth(ctx):
+    await ctx.message.delete()
+    await ctx.channel.send(
+        """
+            Labyrinth Details <https://www.reddit.com/r/FFRecordKeeper/wiki/labyrinth_dungeons>
+            Labyrinth Beginner Guide <https://www.reddit.com/r/FFRecordKeeper/comments/o0vmiy/my_beginners_guide_to_labyrinth_dungeons/>
+            Labyrinth Beginner Pt 2 <https://www.reddit.com/r/FFRecordKeeper/comments/o1xugb/updated_beginner_notes_on_labyrinth/>
+            Labyrinth Higher Difficulty 400+ <https://www.reddit.com/r/FFRecordKeeper/comments/o2svca/the_highdifficulty_labyrinth_grind_guide/>
+            Labyrinth USE REM <https://www.reddit.com/r/FFRecordKeeper/comments/o2n1ui/psa_rem_is_the_ultimate_antilabyrinth_character/>
+            Drop Tracker works on 3 chests <https://www.reddit.com/r/FFRecordKeeper/comments/nd8i8u/ffrk_drop_tracker_and_inventory_exporter_v619/>
+        """
+    )
 
 client.run(token)
