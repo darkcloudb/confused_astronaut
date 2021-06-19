@@ -42,7 +42,7 @@ async def poll(ctx, *, message):
 
 
 @client.command()
-async def schedule(ctx):
+async def schedule2(ctx):
     await ctx.message.delete()
     await ctx.channel.send(
         """
@@ -59,6 +59,24 @@ async def schedule(ctx):
             # 10:00am - 11:00am Demo (<https://kenzie.zoom.us/j/97862629405>)
             #  1:00pm - 3:00pm Jai's Career Class (<https://Kenzie.zoom.us/my/jaicook>) # noqa
     )
+
+
+@client.command()
+async def schedule(ctx):
+    await ctx.message.delete()
+    masked_link = discord.Embed(
+        title='Kenzie Schedule',
+        description='Schedule for 6/9'
+            '[Stand up form](https://airtable.com/shrsjXvrV9edrD0Pu?prefill_Course=SEQ3-199)' # noqa
+            '9:30am - 10:00am Standup in Facilitator Rooms'
+            '[JT Zoom Room](https://kenzie.zoom.us/j/4643938852)'
+            '[Joseph Zoom Room](https://kenzie.zoom.us/j/91302681693)'
+            ']Marcus Zoom Room](https://kenzie.zoom.us/my/marcuscroom)'
+            '[10:00am - 12:00pm Zoom 1:1](https://kenzie.zoom.us/j/97862629405)' # noqa
+            '12:00pm - 1:00pm Lunch'
+            '[1:00pm - 3:00pm Activity](https://kenzie.zoom.us/j/97862629405)'
+    )
+    await ctx.channel.send(embed=masked_link)
 
 
 @client.command()
@@ -103,29 +121,18 @@ async def shutdown(ctx):
 
 """FFRK"""
 
-# @client.command()
-# async def labyrinth(ctx):
-#     await ctx.message.delete()
-#     await ctx.channel.send(
-#             '[Labyrinth Guide](https://www.reddit.com/r/FFRecordKeeper/wiki/labyrinth_dungeons)'
-#             '[Labyrinth Beginner Guide](https://www.reddit.com/r/FFRecordKeeper/comments/o0vmiy/my_beginners_guide_to_labyrinth_dungeons)'
-#             '[Labyrinth Beginner Pt 2](https://www.reddit.com/r/FFRecordKeeper/comments/o1xugb/updated_beginner_notes_on_labyrinth)'
-#             '[Labyrinth Higher Difficulty 400+](https://www.reddit.com/r/FFRecordKeeper/comments/o2svca/the_highdifficulty_labyrinth_grind_guide)'
-#             '[Why is Rem good for Labyrinth?](https://www.reddit.com/r/FFRecordKeeper/comments/o2n1ui/psa_rem_is_the_ultimate_antilabyrinth_character)'
-#             '[Drop Tracker Android Only](https://www.reddit.com/r/FFRecordKeeper/comments/nd8i8u/ffrk_drop_tracker_and_inventory_exporter_v619)'
-#     )
 
 @client.command()
 async def labyrinth(ctx):
     await ctx.message.delete()
     masked_link = discord.Embed(
         title='Labyrinth Info',
-        description='[Labyrinth Guide](https://www.reddit.com/r/FFRecordKeeper/wiki/labyrinth_dungeons)\n'
-            '[Labyrinth Beginner Guide](https://www.reddit.com/r/FFRecordKeeper/comments/o0vmiy/my_beginners_guide_to_labyrinth_dungeons)\n'
-            '[Labyrinth Beginner Pt 2](https://www.reddit.com/r/FFRecordKeeper/comments/o1xugb/updated_beginner_notes_on_labyrinth)\n'
-            '[Labyrinth Higher Difficulty 400+](https://www.reddit.com/r/FFRecordKeeper/comments/o2svca/the_highdifficulty_labyrinth_grind_guide)\n'
-            '[Why is Rem good for Labyrinth?](https://www.reddit.com/r/FFRecordKeeper/comments/o2n1ui/psa_rem_is_the_ultimate_antilabyrinth_character)\n'
-            '[Drop Tracker Android Only](https://www.reddit.com/r/FFRecordKeeper/comments/nd8i8u/ffrk_drop_tracker_and_inventory_exporter_v619)\n'
+        description='[Labyrinth Guide](https://www.reddit.com/r/FFRecordKeeper/wiki/labyrinth_dungeons)\n' # noqa
+            '[Labyrinth Beginner Guide](https://www.reddit.com/r/FFRecordKeeper/comments/o0vmiy/my_beginners_guide_to_labyrinth_dungeons)\n' # noqa
+            '[Labyrinth Beginner Pt 2](https://www.reddit.com/r/FFRecordKeeper/comments/o1xugb/updated_beginner_notes_on_labyrinth)\n' # noqa
+            '[Labyrinth Higher Difficulty 400+](https://www.reddit.com/r/FFRecordKeeper/comments/o2svca/the_highdifficulty_labyrinth_grind_guide)\n' # noqa
+            '[Why is Rem good for Labyrinth?](https://www.reddit.com/r/FFRecordKeeper/comments/o2n1ui/psa_rem_is_the_ultimate_antilabyrinth_character)\n' # noqa
+            '[Drop Tracker Android Only](https://www.reddit.com/r/FFRecordKeeper/comments/nd8i8u/ffrk_drop_tracker_and_inventory_exporter_v619)\n' # noqa
     )
     await ctx.channel.send(embed=masked_link)
 
