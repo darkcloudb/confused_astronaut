@@ -66,15 +66,15 @@ async def schedule(ctx):
     await ctx.message.delete()
     masked_link = discord.Embed(
         title='Kenzie Schedule',
-        description='Schedule for 6/21'
-            '[Stand up form](https://airtable.com/shrsjXvrV9edrD0Pu?prefill_Course=SEQ3-199)' # noqa
-            '9:30am - 10:00am Standup in Facilitator Rooms'
-            '[JT Zoom Room](https://kenzie.zoom.us/j/4643938852)'
-            '[Joseph Zoom Room](https://kenzie.zoom.us/j/91302681693)'
-            ']Marcus Zoom Room](https://kenzie.zoom.us/my/marcuscroom)'
-            '[10:00am - 12:00pm Demo](https://kenzie.zoom.us/j/97862629405)' # noqa
-            '12:00pm - 1:00pm Lunch'
-            '[1:00pm - 3:00pm Activity](https://kenzie.zoom.us/j/97862629405)'
+        description='Schedule for 6/21\n'
+            '[Stand up form](https://airtable.com/shrsjXvrV9edrD0Pu?prefill_Course=SEQ3-199)\n' # noqa
+            '9:30am - 10:00am Standup in Facilitator Rooms\n'
+            '[JT Zoom Room](https://kenzie.zoom.us/j/4643938852)\n'
+            '[Joseph Zoom Room](https://kenzie.zoom.us/j/91302681693)\n'
+            ']Marcus Zoom Room](https://kenzie.zoom.us/my/marcuscroom)\n'
+            '[10:00am - 12:00pm Demo](https://kenzie.zoom.us/j/97862629405)\n' # noqa
+            '12:00pm - 1:00pm Lunch\n'
+            '[1:00pm - 3:00pm Activity](https://kenzie.zoom.us/j/97862629405)\n' # noqa
     )
     await ctx.channel.send(embed=masked_link)
 
