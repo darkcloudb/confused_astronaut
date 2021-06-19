@@ -106,8 +106,8 @@ async def shutdown(ctx):
 async def labyrinth(ctx):
     await ctx.message.delete()
     await ctx.channel.send(
+            '[Labyrinth Info](https://www.reddit.com/r/FFRecordKeeper/wiki/labyrinth_dungeons)'
         """
-            [Labyrinth Info]<https://www.reddit.com/r/FFRecordKeeper/wiki/labyrinth_dungeons>
             Beginner Guide <https://www.reddit.com/r/FFRecordKeeper/comments/o0vmiy/my_beginners_guide_to_labyrinth_dungeons/>
             Beginner Pt 2 <https://www.reddit.com/r/FFRecordKeeper/comments/o1xugb/updated_beginner_notes_on_labyrinth/>
             Higher Difficulty <https://www.reddit.com/r/FFRecordKeeper/comments/o2svca/the_highdifficulty_labyrinth_grind_guide/>
