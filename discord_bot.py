@@ -106,14 +106,12 @@ async def shutdown(ctx):
 async def labyrinth(ctx):
     await ctx.message.delete()
     await ctx.channel.send(
-            '[Labyrinth Info](https://www.reddit.com/r/FFRecordKeeper/wiki/labyrinth_dungeons)'
-        """
-            Beginner Guide <https://www.reddit.com/r/FFRecordKeeper/comments/o0vmiy/my_beginners_guide_to_labyrinth_dungeons/>
-            Beginner Pt 2 <https://www.reddit.com/r/FFRecordKeeper/comments/o1xugb/updated_beginner_notes_on_labyrinth/>
-            Higher Difficulty <https://www.reddit.com/r/FFRecordKeeper/comments/o2svca/the_highdifficulty_labyrinth_grind_guide/>
-            USE REM <https://www.reddit.com/r/FFRecordKeeper/comments/o2n1ui/psa_rem_is_the_ultimate_antilabyrinth_character/>
-            Drop Tracker <https://www.reddit.com/r/FFRecordKeeper/comments/nd8i8u/ffrk_drop_tracker_and_inventory_exporter_v619/>
-        """
+            '[Labyrinth Guide](https://www.reddit.com/r/FFRecordKeeper/wiki/labyrinth_dungeons)'
+            '[Labyrinth Beginner Guide](https://www.reddit.com/r/FFRecordKeeper/comments/o0vmiy/my_beginners_guide_to_labyrinth_dungeons)'
+            '[Labyrinth Beginner Pt 2](https://www.reddit.com/r/FFRecordKeeper/comments/o1xugb/updated_beginner_notes_on_labyrinth)'
+            '[Labyrinth Higher Difficulty 400+](https://www.reddit.com/r/FFRecordKeeper/comments/o2svca/the_highdifficulty_labyrinth_grind_guide)'
+            '[Why is Rem good for Labyrinth?](https://www.reddit.com/r/FFRecordKeeper/comments/o2n1ui/psa_rem_is_the_ultimate_antilabyrinth_character)'
+            '[Drop Tracker Android Only](https://www.reddit.com/r/FFRecordKeeper/comments/nd8i8u/ffrk_drop_tracker_and_inventory_exporter_v619)'
     )
 
 client.run(token)
