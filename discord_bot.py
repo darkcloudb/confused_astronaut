@@ -72,9 +72,10 @@ async def schedule(ctx):
             '[JT Zoom Room](https://kenzie.zoom.us/j/4643938852)\n'
             '[Joseph Zoom Room](https://kenzie.zoom.us/j/91302681693)\n'
             '[Marcus Zoom Room](https://kenzie.zoom.us/my/marcuscroom)\n'
-            '[10:00am - 12:00pm Demo](https://kenzie.zoom.us/j/97862629405)\n' # noqa
+            '[10:00am - 11:00pm Demo](https://kenzie.zoom.us/j/97862629405)\n' # noqa
+            '[11:00am - 12:00pm Study Hall](https://kenzie.zoom.us/j/97862629405)\n'
             '12:00pm - 1:00pm Lunch\n'
-            '[1:00pm - 3:00pm Activity](https://kenzie.zoom.us/j/97862629405)\n' # noqa
+            '[1:00pm - 3:00pm Study Hall](https://kenzie.zoom.us/j/97862629405)\n' # noqa
     )
     await ctx.channel.send(embed=masked_link)
 
